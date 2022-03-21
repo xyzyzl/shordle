@@ -44,11 +44,11 @@ for i in {1..6}; do
 				# echo $nbef
 				# echo $j
 				if [ $ch1 == $ch2 ]; then
-					export resu=$resu${GRN}$ch1${RES}
+					resu=$resu${GRN}$ch1${RES}
 				elif [[ $nocc -gt $nbef ]]; then # this part needs to be somewhat changed
-					export resu=$resu${YEL}$ch1${RES}
+					resu=$resu${YEL}$ch1${RES}
 				else
-					export resu=$resu${RED}$ch1${RES}
+					resu=$resu${RED}$ch1${RES}
 				fi
 			done
 			echo $resu
